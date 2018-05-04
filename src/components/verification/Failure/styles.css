@@ -1,0 +1,44 @@
+.body {
+  background-color: #fff;
+}
+
+.title {
+  font: normal 26px/36px Roboto;
+  color: #222;
+}
+
+.text {
+  font: normal 16px/24px Roboto;
+  color: #6e7987;
+  max-width: 500px;
+  margin-top: 15px;
+
+  & > a {
+    display: inline-block;
+    color: #203542;
+    margin-top: 5px;
+
+    & .linkText {
+      /* text-decoration: underline; */
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+    }
+
+    & .linkArrow {
+      margin-left: 5px;
+    }
+  }
+}
+
+.list {
+  margin: 12px 0px;
+
+  & > li:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+.status {
+  color: #0080FF;
+  font-weight: 500;
+}

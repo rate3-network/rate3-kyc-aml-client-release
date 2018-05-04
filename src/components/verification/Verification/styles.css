@@ -1,0 +1,47 @@
+.title {
+  font: normal 26px/36px Roboto;
+  color: #222;
+}
+
+.text {
+  font: normal 16px/24px Roboto;
+  color: #6e7987;
+  max-width: 500px;
+  margin-top: 15px;
+}
+
+.spinner {
+  width: 200px;
+  position: absolute;
+  z-index: -1;
+}
+
+.checkboxesContainer {
+  margin-top: 35px;
+  max-width: 450px;
+}
+.checkboxInput {
+  margin-bottom: 15px;
+}
+
+.start_verification_button {
+  max-width: 300px;
+  margin-top: 30px;
+
+  @media only screen and (max-width: 480px) {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.supportingText {
+  margin-top: 10px;
+  max-width: 500px;
+  font: 400 12px/18px Roboto;
+  color: #6e7987;
+
+  & > a {
+    font: 500 12px/18px Roboto;
+  }
+}

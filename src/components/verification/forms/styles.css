@@ -1,0 +1,51 @@
+.headingContainer {
+  margin-bottom: 30px;
+}
+
+.title {
+  font: normal 26px/36px Roboto;
+  color: #222;
+}
+
+.text {
+  font: normal 16px/24px Roboto;
+  color: #6e7987;
+  max-width: 500px;
+  margin-top: 5px;
+}
+
+.subtitle {
+  font: normal 22px/28px Roboto;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.supportingText {
+  margin-top: 10px;
+  font: 400 12px/18px Roboto;
+  color: #6e7987;
+}
+
+.imageContainer {
+  max-width: 500px;
+  text-align: center;
+}
+
+.field {
+  margin: 20px 0;
+  max-width: 500px;
+
+  & .fieldLabel {
+    display: inline-block;
+    margin-bottom: 3px;
+  }
+}
+
+.error {
+  font: normal 15px Roboto;
+  text-align: center;
+  color: #ff001f;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  max-width: 500px;
+}

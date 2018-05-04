@@ -1,0 +1,50 @@
+.checkbox {
+  font: normal 15px Roboto;
+  color: #444;
+  position: relative;
+  padding-left: 50px;
+  display: inline-block;
+
+  & a {
+    font: normal 15px Roboto;
+    color: #0080ff;
+    text-decoration: none;
+    pointer-events: painted;
+
+    @media only screen and (max-width: 600px) {
+      font: normal 12px Roboto;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    font: normal 12px Roboto;
+  }
+}
+
+.box {
+  display: inline-block;
+  vertical-align: middle;
+  size: 20px;
+  background-image: svg-load('./images/box.svg');
+  position: absolute;
+  margin-left: -35px;
+
+  &::after {
+    content: '';
+    display: block;
+    size: 20px;
+    background-image: svg-load('./images/arr.svg');
+    opacity: 0;
+    transition: 0.1s linear all;
+  }
+}
+
+.input {
+  display: none;
+}
+
+.input:checked + .box {
+  &::after {
+    opacity: 1;
+  }
+}

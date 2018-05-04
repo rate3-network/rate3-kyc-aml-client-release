@@ -1,0 +1,90 @@
+.label {
+  margin-bottom: 3px;
+
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+}
+
+.ethAddressInput {
+  padding: 15px 12px;
+  font: 500 18px/22px Roboto;
+  background: #F6F9FF;
+  border: 1px solid rgba(67, 146, 241, 0.1);
+  border-radius: 3px;
+  width: 100%;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+
+  @media only screen and (max-width: 480px) {
+    font-size: 14px;
+  }
+
+  @media only screen and (min-width: 601px) and (max-width: 780px) {
+    font-size: 14px;
+  }
+}
+
+.ethAddressInfo {
+  color: #818CA1;
+  padding: 15px 12px;
+  background: #F6F9FF;
+  border: 1px solid rgba(67, 146, 241, 0.1);
+  border-radius: 3px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+
+.supportingInfo {
+  margin-top: 4px;
+  font-size: 12px;
+  color: rgb(135, 135, 135);
+
+  & > a {
+    font-size: 12px;
+    color: rgb(115, 115, 115);
+    text-decoration: underline;
+  }
+}
+
+.gasSettings {
+  margin-top: 12px;
+  font-size: 14px;
+  color: rgb(135, 135, 135);
+
+  & .values {
+    color: initial;
+  }
+}
+
+.saleInfo:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.bonusPercentage {
+  color: rgb(73, 132, 216);
+
+  & .values {
+    color: rgb(58, 135, 259);
+  }
+}
+
+.allocationCap {
+  color: rgb(135, 135, 135);
+
+  & .values {
+    color: initial;
+  }
+}
+
+.values {
+  font-weight: 500;
+}

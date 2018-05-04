@@ -1,0 +1,43 @@
+.securityTipsContainer {
+  max-width: 400px;
+  padding: 15px;
+  background-color: rgba(67, 146, 241, 0.05);
+  border: 1px solid rgba(67, 146, 241, 0.1);
+  border-radius: 5px;
+
+  & .header {
+    font: 500 20px/28px Roboto;
+    margin-bottom: 20px;
+
+    & > img {
+      height: 18px;
+      width: 18px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    & > span {
+      vertical-align: middle;
+    }
+  }
+
+  & .securityTip {
+    color: #818CA1;
+    margin-bottom: 15px;
+
+    & > a {
+      color: #818CA1;
+      font-weight: 500;
+    }
+
+    & .emphasis {
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+
+  & .footer {
+    margin-top: 20px;
+    font-weight: 500;
+  }
+}

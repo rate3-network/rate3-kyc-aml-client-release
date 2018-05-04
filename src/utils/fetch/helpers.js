@@ -1,0 +1,69 @@
+import { isAuth, getToken, removeToken } from '../auth';
+
+const { API_HOST } = process.env;
+
+/**
+ * Request Error object.
+ *
+ * Expects the error to be object with shape:
+ * {
+ *   "code": <Number>,
+ *   "message": <String>,
+ *   "error": <Object> (optional)
+ * }
+ */
+export class RequestError extends Error {
+  constructor(error) {
+    super(error.message);
+
+    this.message = error.message;
+    this.error = error.error;
+    this.statusCode = error.code;
+    this.meta = error.meta;
+  }
+}
+
+export function pathCreator(path) {
+  const correctPath = path[0] === '/' ? path : `/${path}`;
+
+  return `${API_HOST}/api${correctPath}`;
+}
+
+/**
+ * Checks response status.
+ * If status code is not between 200 and 300 throws an error
+ *
+ * @param  response - http Response object
+ * @return            http Response object
+ */
+
+export const checkHttpStatus = (res) =>
+  (res.ok ? res : res.json());
+
+/**
+ * Parse response body to json
+ *
+ * @param  response - http Response object
+ * @return            http Response object
+ */
+
+export const parseJSON = (res) => {
+  if (res instanceof Response) {
+    return res.json();
+  }
+  console.log('res', res);
+  //* MODIFIED
+  // if (res.statusCode === 401) {
+  if (res.code === 401) {
+    removeToken(); // modified to force user logout
+  }
+  // */
+
+  throw new RequestError(res);
+};
+
+export function authHeader() {
+  return isAuth()
+    ? { Authorization: `Bearer ${getToken()}` }
+    : {};
+}

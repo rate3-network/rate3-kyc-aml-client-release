@@ -1,0 +1,42 @@
+.subheader {
+  font: normal 20px/36px Roboto;
+  color: #6e7987;
+  margin-bottom: 10px;
+}
+
+.saleProgress {
+  max-width: 500px;
+}
+
+.addressProof {
+  height: auto;
+  width: 100%;
+  max-width: 500px;
+  background-color: lightblue;
+}
+
+.contributingInformation {
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+/* .balance {
+  margin-top: 40px;
+  font: normal 22px/36px Roboto;
+  color: rgb(41, 117, 234);
+} */
+
+.purchaseBalance {
+  font: normal 20px/24px Roboto;
+  color: rgb(41, 117, 234);
+}
+
+.bonusBalance {
+  margin-top: 4px;
+  font: normal 18px/22px Roboto;
+  color: rgb(41, 117, 234);
+}
+
+.value {
+  font-weight: 500;
+}

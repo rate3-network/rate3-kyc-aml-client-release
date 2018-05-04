@@ -1,0 +1,105 @@
+.dropzone {
+  width: 100%;
+  min-height: 200px;
+  background-color: rgba(67, 146,241, 0.07);
+  display: flex;
+
+  & > * {
+    flex: 1;
+  }
+}
+
+.placeholderContainer {
+  margin-top: 10px;
+  text-align: center;
+  align-self: center;
+
+  & > * {
+    cursor: default;
+  }
+
+  & .placeholderImage {
+    margin-bottom: 5px;
+    & > img, & > svg {
+      height: 48px;
+      width: auto;
+    }
+  }
+
+  & .description {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+  }
+
+  & .info {
+    color: #818CA1;
+  }
+}
+
+.previewContainer {
+  max-width: 100%;
+  text-align: center;
+  align-self: center;
+
+  & > * {
+    cursor: default;
+  }
+
+  & .uploadedImage {
+    height: 70px;
+    width: auto;
+    margin-bottom: 10px;
+    box-shadow:
+      0 10px 16px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+  }
+
+  & .uploadedImageFileName {
+    font-weight: 500;
+    overflow-wrap: break-word;
+  }
+}
+
+.removeFileButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #818CA1;
+  padding: 0px 4px;
+  font-size: 20px;
+  cursor: pointer;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.errorWrapper {
+  border: rgba(67, 146, 241, 0.3) 2px dashed;
+  border-radius: 5px;
+  position: relative;
+
+  &.invalid {
+    border-color: #F26E64;
+  }
+
+  &.valid {
+    border-style: solid;
+  }
+}
+
+.result {
+  margin-top: 5px;
+  text-align: center;
+
+  &.invalid {
+    color: #F26E64;
+  }
+
+  &.valid {
+    color: #50C883;
+  }
+}
+

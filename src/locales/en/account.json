@@ -1,0 +1,14 @@
+{
+  "enable": "Enable",
+  "disable": "Disable",
+  "changePassword": "Change password",
+  "oldPassword": "Old password",
+  "newPassword": "New password",
+  "minPasswordLengthWarning": "Password must contain minimum 8 characters.",
+  "change": "Change",
+  "hello": "Hello",
+  "accountVerified": "Account verified",
+  "signOut": "Sign Out",
+  "emailConfirmationTip": "We sent the code to your email address. Please, check your inbox or spam folder.",
+  "submit": "Submit"
+}

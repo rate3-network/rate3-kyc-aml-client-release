@@ -1,0 +1,27 @@
+.bar {
+  display: -webkit-box;
+  /* display: -ms-flexbox; */
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  font-size: .75rem;
+  background-color: #F6F9FF;
+  border-radius: 3px;
+}
+
+.progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  background-color: #D9E6FF;
+  transition: width .6s ease;
+}

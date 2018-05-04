@@ -1,0 +1,37 @@
+<svg width="292" height="364" viewBox="0 0 292 364" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-14088 -12836)">
+<g id="Group">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(14161 12908.8)" fill="url(#paint0_linear)"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(14088 12836)" fill="url(#paint1_linear)"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path2_fill" transform="translate(14088 13090.8)" fill="url(#paint2_linear)"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 291.2 -292 0 255.5 0)">
+<stop offset="0" stop-color="#54F2F2"/>
+<stop offset="0.777" stop-color="#56D3F8"/>
+<stop offset="0.9649" stop-color="#56CBF9"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 109.2 -109.5 0 200.75 0)">
+<stop offset="0" stop-color="#54F2F2"/>
+<stop offset="0.5" stop-color="#56CBF9"/>
+<stop offset="1" stop-color="#4392F1"/>
+</linearGradient>
+<linearGradient id="paint2_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 72.8 -73 0 109.5 0)">
+<stop offset="0" stop-color="#54F2F2"/>
+<stop offset="0.5" stop-color="#56CBF9"/>
+<stop offset="1" stop-color="#4392F1"/>
+</linearGradient>
+<path id="path0_fill" d="M 219 0L 73 72.8L 73 145.6L 146 182L 0 254.8L 73 291.2L 219 218.4L 219 145.6L 146 109.2L 219 72.8L 219 0Z"/>
+<path id="path1_fill" d="M 0 72.8L 73 109.2L 146 72.8L 219 109.2L 292 72.8L 146 0L 0 72.8Z"/>
+<path id="path2_fill" d="M 73 0L 0 36.4L 73 72.8L 146 36.4L 73 0Z"/>
+</defs>
+</svg>

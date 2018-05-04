@@ -1,0 +1,40 @@
+.label {
+  margin-bottom: 3px;
+}
+
+.ethAddress {
+  display: flex;
+
+  & div:nth-child(1) {
+    flex: 1;
+  }
+
+  & .copyIcon {
+    height: 20px;
+    width: 18px;
+  }
+}
+
+.input {
+  height: 40px;
+  background-color: #F6F9FF;
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-family: Roboto;
+  font-weight: 500;
+  border-radius: 3px;
+  border: none;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+.list {
+  margin: 12px 0px;
+  padding-left: 20px;
+  color: #6e7987;
+  & > li:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
